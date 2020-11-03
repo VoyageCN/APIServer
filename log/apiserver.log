@@ -1,0 +1,166 @@
+{"level":"INFO","timestamp":"2020-11-02 20:37:40.305","file":"Gin Demo/main.go:47","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-02 20:37:40.616","file":"Gin Demo/main.go:44","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-02 20:38:35.157","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-02 20:38:35.162","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-02 20:39:19.039","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-02 20:39:19.042","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:03:49.681","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:03:49.685","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:03:49.688","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:03:52.652","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:03:52.657","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:03:58.897","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:03:58.901","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:17.809","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:17.813","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:20.911","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:20.915","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:24.292","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:24.296","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:27.528","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:27.532","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:31.142","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:31.146","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:38.317","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:38.324","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:42.287","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:42.292","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:48.246","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:04:48.251","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:05:03.939","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-03 01:05:03.947","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"ERROR","timestamp":"2020-11-03 01:21:45.867","file":"model/init.go:31","msg":"Database connection failed, Database name: db_apiserver","data":{"error":"invalid DSN: did you forget to escape a param value?"}}
+{"level":"ERROR","timestamp":"2020-11-03 01:23:14.160","file":"model/init.go:31","msg":"Database connection failed, Database name: db_apiserver","data":{"error":"invalid DSN: did you forget to escape a param value?"}}
+{"level":"ERROR","timestamp":"2020-11-03 01:24:44.256","file":"model/init.go:31","msg":"Database connection failed, Database name: db_apiserver","data":{"error":"Error 1049: Unknown database 'db_apiserver'"}}
+{"level":"ERROR","timestamp":"2020-11-03 01:24:44.396","file":"model/init.go:31","msg":"Database connection failed, Database name: db_apiserver","data":{"error":"Error 1049: Unknown database 'db_apiserver'"}}
+{"level":"INFO","timestamp":"2020-11-03 01:24:44.396","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 01:24:44.408","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 01:30:05.994","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 01:30:06.306","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 02:02:14.578","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 02:02:14.891","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"DEBUG","timestamp":"2020-11-03 02:04:26.232","file":"user/create.go:23","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2020-11-03 02:04:26.232","file":"user/create.go:26","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username cannot found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2020-11-03 02:04:26.232","file":"user/create.go:30","msg":"err type is ErrUserNotFound"}
+{"level":"DEBUG","timestamp":"2020-11-03 02:05:34.890","file":"user/create.go:23","msg":"username is: [], password is []"}
+{"level":"ERROR","timestamp":"2020-11-03 02:05:34.890","file":"user/create.go:26","msg":"Get an error","data":{"error":"Err - code: 20102, message: The user was not found. This is add message., error: username cannot found in db: xx.xx.xx.xx"}}
+{"level":"DEBUG","timestamp":"2020-11-03 02:05:34.890","file":"user/create.go:30","msg":"err type is ErrUserNotFound"}
+{"level":"INFO","timestamp":"2020-11-03 02:30:59.272","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 02:30:59.584","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 02:31:36.978","file":"user/create.go:19","msg":"URL username: admin"}
+{"level":"INFO","timestamp":"2020-11-03 02:31:36.978","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 02:31:36.978","file":"user/create.go:25","msg":"Header Content-Type: "}
+{"level":"DEBUG","timestamp":"2020-11-03 02:31:36.978","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 02:32:22.362","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 02:32:22.362","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 02:32:22.362","file":"user/create.go:25","msg":"Header Content-Type: "}
+{"level":"DEBUG","timestamp":"2020-11-03 02:32:22.362","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 02:34:51.818","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 02:34:51.818","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 02:34:51.818","file":"user/create.go:25","msg":"Header Content-Type: "}
+{"level":"DEBUG","timestamp":"2020-11-03 02:34:51.818","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 02:36:22.046","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 02:36:22.046","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 02:36:22.046","file":"user/create.go:25","msg":"Header Content-Type: "}
+{"level":"DEBUG","timestamp":"2020-11-03 02:36:22.046","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 02:38:04.834","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 02:38:04.834","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 02:38:04.834","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------538107256094996832429303"}
+{"level":"DEBUG","timestamp":"2020-11-03 02:38:04.834","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 02:42:17.490","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 02:42:17.490","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 02:42:17.490","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------943240338106626841312613"}
+{"level":"DEBUG","timestamp":"2020-11-03 02:42:17.490","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 02:42:54.012","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 02:42:54.012","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 02:42:54.012","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------044114018273856966133627"}
+{"level":"DEBUG","timestamp":"2020-11-03 02:42:54.012","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 02:47:30.716","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 02:47:31.027","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 02:50:35.791","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 02:50:36.105","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 02:56:20.729","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 02:56:21.044","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 02:58:14.104","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 02:58:14.417","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 03:04:09.969","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 03:04:10.283","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 03:46:44.951","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:47:04.733","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:47:13.263","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------413972810393212158172262"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:47:15.607","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:47:41.950","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:48:00.310","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:48:00.310","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------316392951195305055841116"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:48:00.310","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:48:41.017","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:48:41.017","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:48:41.017","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------179661686438983806731710"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:48:41.017","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:48:49.229","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:48:49.229","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:48:49.229","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------440305222981337778025374"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:48:49.229","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:49:04.691","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:49:04.692","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:49:04.692","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------811149652019714681658664"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:49:04.692","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:49:16.854","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:49:16.854","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:49:16.854","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------236336388279830159606313"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:49:16.854","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:49:52.213","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:49:52.213","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:49:52.213","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------823121841970655510156613"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:49:52.213","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:50:01.022","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:50:01.022","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:50:01.022","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------385806110891447345439930"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:50:01.022","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:50:17.734","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:50:17.734","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:50:17.734","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------067030247280848129583511"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:50:17.734","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:50:41.896","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:50:41.896","file":"user/create.go:22","msg":"URL key param desc: "}
+{"level":"INFO","timestamp":"2020-11-03 03:50:41.896","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------782220183469507133781629"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:50:41.896","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:05.560","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:05.560","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:05.560","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------382974816704985643913531"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:51:05.560","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:30.064","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:30.064","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:30.064","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------765228588887265516832821"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:51:30.064","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:49.622","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:49.622","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 03:51:49.622","file":"user/create.go:25","msg":"Header Content-Type: multipart/form-data; boundary=--------------------------595025587261686954921057"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:51:49.622","file":"user/create.go:27","msg":"username is: [], password is []"}
+{"level":"INFO","timestamp":"2020-11-03 03:54:58.025","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 03:54:58.123","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:54:58.123","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 03:54:58.123","file":"user/create.go:25","msg":"Header Content-Type: application/json,charset=utf-8"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:54:58.123","file":"user/create.go:27","msg":"username is: [admin], password is [admin]"}
+{"level":"INFO","timestamp":"2020-11-03 03:54:58.339","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 03:55:26.030","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:55:26.030","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 03:55:26.030","file":"user/create.go:25","msg":"Header Content-Type: application/json,charset=utf-8"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:55:26.030","file":"user/create.go:27","msg":"username is: [admin], password is [admin]"}
+{"level":"INFO","timestamp":"2020-11-03 03:56:53.846","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:56:53.846","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 03:56:53.846","file":"user/create.go:25","msg":"Header Content-Type: application/json,charset=utf-8"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:56:53.847","file":"user/create.go:27","msg":"username is: [admin], password is [admin]"}
+{"level":"INFO","timestamp":"2020-11-03 03:59:48.197","file":"user/create.go:19","msg":"URL username: admin2"}
+{"level":"INFO","timestamp":"2020-11-03 03:59:48.197","file":"user/create.go:22","msg":"URL key param desc: test"}
+{"level":"INFO","timestamp":"2020-11-03 03:59:48.197","file":"user/create.go:25","msg":"Header Content-Type: application/json,charset=utf-8"}
+{"level":"DEBUG","timestamp":"2020-11-03 03:59:48.197","file":"user/create.go:27","msg":"username is: [admin], password is [admin]"}
+{"level":"INFO","timestamp":"2020-11-03 04:40:59.745","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 04:41:00.056","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 04:41:29.576","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 04:42:28.985","file":"Gin Demo/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 04:42:29.299","file":"Gin Demo/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 04:42:31.372","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 04:45:03.628","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 04:51:16.923","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 04:53:00.805","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}

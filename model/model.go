@@ -13,12 +13,13 @@ type BaseModel struct {
 }
 
 type UserInfo struct {
-	Id 		 uint64 `json:"id"`
-	Username string `json:"username"`
-	SayHello string `json:"sayHello"`
-	Password string `json:"password"`
-	CreateAt string `json:"createAt"`
-	UpdateAt string `json:"updateAt""`
+	Id         uint64 `json:"id"`
+	Username   string `json:"username"`
+	SayHello   string `json:"sayHello"`
+	Password   string `json:"password"`
+	CreatedAt  string `json:"createdAt"`
+	UpdatedAt  string `json:"updatedAt"`
+
 }
 
 type UserList struct {

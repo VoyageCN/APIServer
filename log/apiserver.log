@@ -164,3 +164,23 @@
 {"level":"INFO","timestamp":"2020-11-03 04:45:03.628","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
 {"level":"INFO","timestamp":"2020-11-03 04:51:16.923","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
 {"level":"INFO","timestamp":"2020-11-03 04:53:00.805","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:05:15.250","file":"APIServer/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 16:05:15.562","file":"APIServer/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 16:05:50.852","file":"APIServer/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 16:05:51.165","file":"APIServer/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 16:06:37.455","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:08:15.274","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:08:35.148","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:09:12.772","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:09:38.285","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:09:58.491","file":"user/create.go:14","msg":"User Create function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:10:34.104","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:11:21.768","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:11:27.574","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:11:52.116","file":"APIServer/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-03 16:11:52.427","file":"APIServer/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-03 16:12:23.369","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:12:45.740","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:12:55.109","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:14:01.025","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-03 16:14:10.303","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}

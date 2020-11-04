@@ -2,7 +2,7 @@ package config
 
 import (
 	"github.com/fsnotify/fsnotify"
-	"github.com/lexkong/log"
+	"github.com/zxmrlc/log"
 	"github.com/spf13/viper"
 	"strings"
 )

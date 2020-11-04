@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/lexkong/log"
+	"github.com/zxmrlc/log"
 	"github.com/spf13/viper"
 )
 

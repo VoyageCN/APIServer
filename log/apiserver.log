@@ -184,3 +184,5 @@
 {"level":"INFO","timestamp":"2020-11-03 16:12:55.109","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
 {"level":"INFO","timestamp":"2020-11-03 16:14:01.025","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
 {"level":"INFO","timestamp":"2020-11-03 16:14:10.303","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
+{"level":"INFO","timestamp":"2020-11-05 01:49:46.325","file":"APIServer/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-05 01:49:46.638","file":"APIServer/main.go:49","msg":"The router has been deployed successfully."}

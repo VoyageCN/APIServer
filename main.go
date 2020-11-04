@@ -6,7 +6,7 @@ import (
 	"APISERVER/router"
 	"errors"
 	"github.com/gin-gonic/gin"
-	"github.com/lexkong/log"
+	"github.com/zxmrlc/log"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"net/http"

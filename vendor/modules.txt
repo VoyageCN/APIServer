@@ -52,7 +52,6 @@ github.com/json-iterator/go
 github.com/leodido/go-urn
 # github.com/lexkong/log v0.0.0-20180607165131-972f9cd951fc
 ## explicit
-github.com/lexkong/log
 github.com/lexkong/log/lager
 github.com/lexkong/log/lager/color
 # github.com/magiconair/properties v1.8.1
@@ -98,6 +97,12 @@ github.com/subosito/gotenv
 github.com/teris-io/shortid
 # github.com/ugorji/go/codec v1.1.7
 github.com/ugorji/go/codec
+# github.com/willf/pad v0.0.0-20200313202418-172aa767f2a4
+## explicit
+github.com/willf/pad
+# github.com/zxmrlc/log v0.0.0-20180607165131-972f9cd951fc
+## explicit
+github.com/zxmrlc/log
 # golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 ## explicit
 golang.org/x/crypto/bcrypt

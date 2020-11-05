@@ -186,3 +186,26 @@
 {"level":"INFO","timestamp":"2020-11-03 16:14:10.303","file":"user/update.go:15","msg":"Update function called.","data":{"X-Request-Id":""}}
 {"level":"INFO","timestamp":"2020-11-05 01:49:46.325","file":"APIServer/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
 {"level":"INFO","timestamp":"2020-11-05 01:49:46.638","file":"APIServer/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 01:45:37.207","file":"APIServer/main.go:52","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-06 01:45:37.522","file":"APIServer/main.go:49","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 01:49:21.861","file":"APIServer/main.go:55","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-06 01:49:22.179","file":"APIServer/main.go:52","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 01:49:28.282","file":"middleware/logging.go:81","msg":"238.9977ms    | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2020-11-06 02:48:50.902","file":"APIServer/main.go:55","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-06 02:48:51.292","file":"APIServer/main.go:52","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 02:49:24.619","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-06 02:49:24.622","file":"config/config.go:65","msg":"Config file changed: "}
+{"level":"INFO","timestamp":"2020-11-06 02:49:32.541","file":"APIServer/main.go:55","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-06 02:49:32.855","file":"APIServer/main.go:52","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 02:49:39.168","file":"middleware/logging.go:81","msg":"0s            | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2020-11-06 02:59:28.865","file":"APIServer/main.go:55","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-06 02:59:29.184","file":"APIServer/main.go:52","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 03:00:09.505","file":"middleware/logging.go:81","msg":"0s            | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2020-11-06 03:00:25.404","file":"middleware/logging.go:81","msg":"224.0142ms    | ::1          | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2020-11-06 03:00:43.682","file":"middleware/logging.go:81","msg":"0s            | ::1          | GET /v1/user | {code: 20103, message: The token was invalid.}"}
+{"level":"INFO","timestamp":"2020-11-06 03:01:04.326","file":"middleware/logging.go:81","msg":"236.998ms     | ::1          | GET /v1/user | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2020-11-06 03:07:05.573","file":"middleware/logging.go:81","msg":"224.0023ms    | ::1          | POST /login | {code: 20104, message: The password was incorrect.}"}
+{"level":"INFO","timestamp":"2020-11-06 03:07:11.270","file":"middleware/logging.go:81","msg":"206.0005ms    | ::1          | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2020-11-06 03:19:16.488","file":"APIServer/main.go:55","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-06 03:19:16.807","file":"APIServer/main.go:52","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 03:21:13.610","file":"middleware/logging.go:81","msg":"1m9.863367s   | ::1          | POST /login | {code: 0, message: OK}"}

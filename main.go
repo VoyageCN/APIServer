@@ -4,6 +4,7 @@ import (
 	"APISERVER/config"
 	"APISERVER/model"
 	"APISERVER/router"
+	"APISERVER/router/middleware"
 	"errors"
 	"github.com/gin-gonic/gin"
 	"github.com/zxmrlc/log"
@@ -35,11 +36,13 @@ func main() {
 	// Create the gin engine
 	g := gin.New()
 
-	middlewares := []gin.HandlerFunc{}
-
 	router.Load(
+		// Cores.
 		g,
-		middlewares...,
+
+		// Middlewares.
+		middleware.Logging(),
+		middleware.RequestId(),
 	)
 
 	go func() {

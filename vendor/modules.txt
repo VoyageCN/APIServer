@@ -1,6 +1,9 @@
 # github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
 ## explicit
 github.com/StackExchange/wmi
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+## explicit
+github.com/dgrijalva/jwt-go
 # github.com/fsnotify/fsnotify v1.4.9
 ## explicit
 github.com/fsnotify/fsnotify
@@ -70,6 +73,9 @@ github.com/modern-go/reflect2
 ## explicit
 # github.com/pelletier/go-toml v1.2.0
 github.com/pelletier/go-toml
+# github.com/satori/go.uuid v1.2.0
+## explicit
+github.com/satori/go.uuid
 # github.com/shirou/gopsutil v3.20.10+incompatible
 ## explicit
 github.com/shirou/gopsutil/cpu

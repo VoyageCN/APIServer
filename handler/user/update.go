@@ -38,6 +38,6 @@ func Update(c *gin.Context) {
 		SendResponse(c, errno.ErrDatabase, nil)
 		return
 	}
-	
+
 	SendResponse(c, nil, nil)
 }

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
+	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
-	jwt "github.com/dgrijalva/jwt-go"
 )
 
 var (
@@ -17,7 +17,7 @@ var (
 
 // Context is the context of the json web token
 type Context struct {
-	ID  	 uint64
+	ID       uint64
 	Username string
 }
 
@@ -83,16 +83,13 @@ func Sign(ctx *gin.Context, c Context, secret string) (tokenString string, err e
 	}
 	// The token content.
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
-		"id": 		c.ID,
+		"id":       c.ID,
 		"username": c.Username,
-		"nbf":		time.Now().Unix(),
-		"iat":		time.Now().Unix(),
+		"nbf":      time.Now().Unix(),
+		"iat":      time.Now().Unix(),
 	})
 	// Sign the token with the specified secret.
 	tokenString, err = token.SignedString([]byte(secret))
 
 	return
 }
-
-
-

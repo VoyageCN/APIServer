@@ -1,26 +1,45 @@
 package main
 
 import (
+	"encoding/json"
+	"errors"
+	"fmt"
+	"net/http"
+	"os"
+	"time"
+
 	"APISERVER/config"
 	"APISERVER/model"
+	v "APISERVER/pkg/version"
 	"APISERVER/router"
 	"APISERVER/router/middleware"
-	"errors"
+
 	"github.com/gin-gonic/gin"
-	"github.com/zxmrlc/log"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	"net/http"
-	"time"
+	"github.com/zxmrlc/log"
 )
 
 var (
-	cfg = pflag.StringP("config", "c", "", "apiserver config file path.")
+	cfg     = pflag.StringP("config", "c", "", "apiserver config file path.")
+	version = pflag.BoolP("version", "v", false, "show version info.")
 )
 
 // 整个程序的主入口
 func main() {
 	pflag.Parse()
+
+	if *version {
+		v := v.Get()
+		marshalled, err := json.MarshalIndent(&v, "", "  ")
+		if err != nil {
+			fmt.Printf("%v\n", err)
+			os.Exit(1)
+		}
+
+		fmt.Println(string(marshalled))
+		return
+	}
 
 	// init config
 	if err := config.Init(*cfg); err != nil {
@@ -32,7 +51,7 @@ func main() {
 	defer model.DB.Close()
 
 	gin.SetMode(viper.GetString("runmode"))
-	
+
 	// Create the gin engine
 	g := gin.New()
 
@@ -52,7 +71,16 @@ func main() {
 		log.Info("The router has been deployed successfully.")
 	}()
 
-	log.Infof("Start to listening the incoming requests on http address: %s", ":8080")
+	cert := viper.GetString("tls.cert")
+	key := viper.GetString("tls.key")
+	if cert != "" && key != "" {
+		go func() {
+			log.Infof("Start to listening the incoming requests on https address: %s", viper.GetString("tls.addr"))
+			log.Info(http.ListenAndServeTLS(viper.GetString("tls.addr"), cert, key, g).Error())
+		}()
+	}
+
+	log.Infof("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
 	log.Info(http.ListenAndServe(viper.GetString("addr"), g).Error())
 }
 

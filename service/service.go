@@ -21,7 +21,7 @@ func ListUser(username string, offset, limit int) ([]*model.UserInfo, uint64, er
 
 	wg := sync.WaitGroup{}
 	userList := model.UserList{
-		Lock: new(sync.Mutex),
+		Lock:  new(sync.Mutex),
 		IdMap: make(map[uint64]*model.UserInfo, len(users)),
 	}
 
@@ -42,7 +42,7 @@ func ListUser(username string, offset, limit int) ([]*model.UserInfo, uint64, er
 			userList.Lock.Lock()
 			defer userList.Lock.Unlock()
 			userList.IdMap[u.Id] = &model.UserInfo{
-				Id:		   u.Id,
+				Id:        u.Id,
 				Username:  u.Username,
 				SayHello:  fmt.Sprintf("Hello %s", shortId),
 				Password:  u.Password,

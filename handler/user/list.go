@@ -22,6 +22,6 @@ func List(c *gin.Context) {
 
 	SendResponse(c, nil, ListResponse{
 		TotalCount: count,
-		UserList: infos,
+		UserList:   infos,
 	})
 }

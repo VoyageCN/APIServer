@@ -209,3 +209,7 @@
 {"level":"INFO","timestamp":"2020-11-06 03:19:16.488","file":"APIServer/main.go:55","msg":"Start to listening the incoming requests on http address: :8080"}
 {"level":"INFO","timestamp":"2020-11-06 03:19:16.807","file":"APIServer/main.go:52","msg":"The router has been deployed successfully."}
 {"level":"INFO","timestamp":"2020-11-06 03:21:13.610","file":"middleware/logging.go:81","msg":"1m9.863367s   | ::1          | POST /login | {code: 0, message: OK}"}
+{"level":"INFO","timestamp":"2020-11-06 03:57:05.397","file":"APIServer/main.go:64","msg":"Start to listening the incoming requests on http address: :8080"}
+{"level":"INFO","timestamp":"2020-11-06 03:57:05.397","file":"APIServer/main.go:59","msg":"Start to listening the incoming requests on https address: :8081"}
+{"level":"INFO","timestamp":"2020-11-06 03:57:05.713","file":"APIServer/main.go:52","msg":"The router has been deployed successfully."}
+{"level":"INFO","timestamp":"2020-11-06 04:05:08.234","file":"middleware/logging.go:81","msg":"214.9841ms    | ::1          | GET /v1/user | {code: 0, message: OK}"}

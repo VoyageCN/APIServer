@@ -27,7 +27,7 @@ func DeleteUser(id uint64) error {
 	return DB.Self.Delete(&user).Error
 }
 
-func (u *UserModel)Update() error {
+func (u *UserModel) Update() error {
 	return DB.Self.Save(u).Error
 }
 
@@ -61,7 +61,6 @@ func (u *UserModel) Compare(pwd string) (err error) {
 	err = auth.Compare(u.Password, pwd)
 	return
 }
-
 
 // Encrypt the user password.
 func (u *UserModel) Encrypt() (err error) {

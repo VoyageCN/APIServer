@@ -41,5 +41,3 @@ func Login(c *gin.Context) {
 
 	SendResponse(c, nil, model.Token{Token: t})
 }
-
-

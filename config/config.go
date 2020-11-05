@@ -2,8 +2,8 @@ package config
 
 import (
 	"github.com/fsnotify/fsnotify"
-	"github.com/zxmrlc/log"
 	"github.com/spf13/viper"
+	"github.com/zxmrlc/log"
 	"strings"
 )
 
@@ -46,7 +46,7 @@ func (c *Config) initConfig() error {
 }
 
 func (c *Config) InitLog() {
-	passLagerCfg := log.PassLagerCfg {
+	passLagerCfg := log.PassLagerCfg{
 		Writers:        viper.GetString("log.writers"),
 		LoggerLevel:    viper.GetString("log.logger_level"),
 		LoggerFile:     viper.GetString("log.logger_file"),

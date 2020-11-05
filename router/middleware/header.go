@@ -40,5 +40,3 @@ func Secure(c *gin.Context) {
 	// Also consider adding Content-Security-Policy headers
 	// c.Header("Content-Security-Policy", "script-src 'self' https://cdnjs.cloudflare.com")
 }
-
-

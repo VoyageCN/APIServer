@@ -4,10 +4,9 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/zxmrlc/log"
 	"github.com/spf13/viper"
+	"github.com/zxmrlc/log"
 )
-
 
 type Database struct {
 	Self   *gorm.DB
@@ -65,7 +64,7 @@ func GetDockerDB() *gorm.DB {
 
 func (db *Database) Init() {
 	DB = &Database{
-		Self: GetSelfDB(),
+		Self:   GetSelfDB(),
 		Docker: GetDockerDB(),
 	}
 }

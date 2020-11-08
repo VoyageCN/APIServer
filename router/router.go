@@ -1,14 +1,21 @@
 package router
 
 import (
+	_ "APISERVER/docs"
+
 	"APISERVER/handler/sd"
 	"APISERVER/handler/user"
 	"APISERVER/router/middleware"
+	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
+	"github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger/swaggerFiles"
 	"net/http"
 )
 
+// Load loads the middlewares, routes, handlers.
 func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
+	// Middlewares.
 	g.Use(gin.Recovery())
 	g.Use(middleware.NoCache)
 	g.Use(middleware.Options)
@@ -18,6 +25,12 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	g.NoRoute(func(c *gin.Context) {
 		c.String(http.StatusNotFound, "The incorrect API route.")
 	})
+
+	// Swagger api docs
+	g.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+
+	// pprof router
+	pprof.Register(g)
 
 	g.POST("/login", user.Login) // 登陆用户
 

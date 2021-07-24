@@ -41,10 +41,14 @@ func setup(db *gorm.DB) {
 }
 
 func InitSelfDB() *gorm.DB {
-	return openDB(viper.GetString("db.username"),
+	db := openDB(viper.GetString("db.username"),
 		viper.GetString("db.password"),
 		viper.GetString("db.addr"),
 		viper.GetString("db.name"))
+
+	db.AutoMigrate(&UserModel{}, &PrinterModel{})
+
+	return db
 }
 
 func GetSelfDB() *gorm.DB {
@@ -64,12 +68,12 @@ func GetDockerDB() *gorm.DB {
 
 func (db *Database) Init() {
 	DB = &Database{
-		Self:   GetSelfDB(),
-		Docker: GetDockerDB(),
+		Self: GetSelfDB(),
+		//Docker: GetDockerDB(),
 	}
 }
 
 func (db *Database) Close() {
 	DB.Self.Close()
-	DB.Docker.Close()
+	//DB.Docker.Close()
 }

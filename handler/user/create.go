@@ -6,8 +6,8 @@ import (
 	"APISERVER/pkg/errno"
 	"APISERVER/util"
 	"github.com/gin-gonic/gin"
-	"github.com/lexkong/log/lager"
 	"github.com/zxmrlc/log"
+	"github.com/zxmrlc/log/lager"
 )
 
 // @Summary Add new user to the database
@@ -21,7 +21,7 @@ import (
 func Create(c *gin.Context) {
 	log.Info("User Create function called.", lager.Data{"X-Request-Id": util.GetReqID(c)})
 	var r CreateRequest
-	if err := c.BindJSON(&r); err != nil {
+	if err := c.Bind(&r); err != nil {
 		SendResponse(c, errno.ErrBind, nil)
 		return
 	}

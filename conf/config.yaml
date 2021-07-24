@@ -19,12 +19,12 @@ log:
   log_backup_count: 7
 db:
   name: db_apiserver
-  addr: 49.233.174.176:3306
+  addr: 82.157.180.201:3306
   username: root
-  password: zmdaykui1
+  password: root
 
 docker_db:
   name: db_apiserver
-  addr: 49.233.174.176:3306
+  addr: 82.157.180.201:3306
   username: root
   password: zmdaykui1

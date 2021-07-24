@@ -2,6 +2,7 @@ package router
 
 import (
 	_ "APISERVER/docs"
+	"APISERVER/handler/printer"
 
 	"APISERVER/handler/sd"
 	"APISERVER/handler/user"
@@ -35,15 +36,22 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	g.POST("/login", user.Login) // 登陆用户
 
 	u := g.Group("/v1/user")
-
 	u.Use(middleware.AuthMiddleware())
 	{
-		u.POST("", user.Create)       // 创建用户
-		u.DELETE("/:id", user.Delete) // 删除用户
-		u.PUT("/:id", user.Update)    // 更新用户
-		u.GET("", user.List)          // 用户列表
-		u.GET("/:username", user.Get) // 获取指定用户的详细信息
+		u.POST("", user.Create)           // 创建用户
+		u.DELETE("/:id", user.Delete)     // 删除用户
+		u.PUT("/:id", user.Update)        // 更新用户
+		u.GET("", user.List)              // 用户列表
+		u.GET("/userinfo", user.Get)      // 获取登陆用户的详细信息
+		u.POST("/bind", user.BindPrinter) // 绑定打印机
 	}
+
+	p := g.Group("/v1/printer")
+	p.GET("", printer.Get)
+	p.POST("/register", printer.Register) // 注册打印机
+	p.PUT("", printer.Update)             // 更新打印机
+	p.DELETE("/:id", printer.Delete)      //删除打印机
+	p.POST("/connect", printer.Connect)   //连接打印机
 
 	// The health check handlers
 	svcd := g.Group("/sd")

@@ -9,8 +9,9 @@ import (
 
 type UserModel struct {
 	BaseModel
-	Username string `json:"username" gorm:"column:username;not null" binding:"required" validate:"min=1,max=32"`
-	Password string `json:"password" gorm:"column:password;not null" binding:"required" validate:"min=5,max=128"`
+	Username string         `json:"username" gorm:"column:username;not null;unique" binding:"required" validate:"min=1,max=32"`
+	Password string         `json:"password" gorm:"column:password;not null" binding:"required" validate:"min=5,max=128"`
+	Printers []PrinterModel `json:"printers" gorm:"many2many:tb_user_printers;"`
 }
 
 func (c *UserModel) TableName() string {
@@ -34,6 +35,7 @@ func (u *UserModel) Update() error {
 func GetUser(username string) (*UserModel, error) {
 	u := &UserModel{}
 	d := DB.Self.Where("username = ?", username).First(&u)
+	DB.Self.Model(&u).Association("Printers").Find(&u.Printers)
 	return u, d.Error
 }
 

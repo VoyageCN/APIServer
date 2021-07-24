@@ -2,8 +2,6 @@ package service
 
 import (
 	"APISERVER/model"
-	"APISERVER/util"
-	"fmt"
 	"sync"
 )
 
@@ -33,19 +31,19 @@ func ListUser(username string, offset, limit int) ([]*model.UserInfo, uint64, er
 		go func(u *model.UserModel) {
 			defer wg.Done()
 
-			shortId, err := util.GenShortId()
-			if err != nil {
-				errChan <- err
-				return
-			}
+			//shortId, err := util.GenShortId()
+			//if err != nil {
+			//	errChan <- err
+			//	return
+			//}
 
 			userList.Lock.Lock()
 			defer userList.Lock.Unlock()
 			userList.IdMap[u.Id] = &model.UserInfo{
-				Id:        u.Id,
-				Username:  u.Username,
-				SayHello:  fmt.Sprintf("Hello %s", shortId),
-				Password:  u.Password,
+				Id:       u.Id,
+				Username: u.Username,
+				//SayHello:  fmt.Sprintf("Hello %s", shortId),
+				//Password:  u.Password,
 				CreatedAt: u.CreatedAt.Format("2006-01-02 15:04:05"),
 				UpdatedAt: u.UpdatedAt.Format("2006-01-02 15:04:05"),
 			}

@@ -7,6 +7,7 @@ import (
 	"APISERVER/pkg/errno"
 	"APISERVER/pkg/token"
 	"github.com/gin-gonic/gin"
+	"net"
 )
 
 // @Summary Login generates the authentication token
@@ -33,6 +34,19 @@ func Login(c *gin.Context) {
 	// Compare the login password with the user password.
 	if err := auth.Compare(d.Password, u.Password); err != nil {
 		SendResponse(c, errno.ErrPasswordIncorrect, nil)
+		return
+	}
+
+	ip, port, err := net.SplitHostPort(c.Request.RemoteAddr)
+	if err != nil {
+		SendResponse(c, err, nil)
+		return
+	}
+	d.ClientPort = port
+	d.ClientIP = ip
+
+	if err := d.Update(); err != nil {
+		SendResponse(c, errno.ErrDatabase, nil)
 		return
 	}
 

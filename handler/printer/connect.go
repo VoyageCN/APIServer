@@ -13,5 +13,6 @@ func Connect(c *gin.Context) {
 		SendResponse(c, errno.ErrBind, nil)
 		return
 	}
+	// 请求打洞
 
 }

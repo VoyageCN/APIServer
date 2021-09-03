@@ -2,13 +2,13 @@ package user
 
 import "APISERVER/model"
 
-type CreateRequest struct {
-	Username string `json:"username"`
+type RegisterRequest struct {
+	Email    string `json:"email"`
 	Password string `json:"password"`
 }
 
-type CreateResponse struct {
-	Username string `json:"username"`
+type RegisterResponse struct {
+	Email string `json:"email"`
 }
 
 type ListRequest struct {
@@ -20,6 +20,10 @@ type ListRequest struct {
 type ListResponse struct {
 	TotalCount uint64            `json:"totalCount"`
 	UserList   []*model.UserInfo `json:"userList"`
+}
+
+type ActivateRequest struct {
+	Token string `json:"token"`
 }
 
 type SwaggerListResponse struct {

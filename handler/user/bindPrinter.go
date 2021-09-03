@@ -33,6 +33,7 @@ func BindPrinter(c *gin.Context) {
 			SendResponse(c, err, nil)
 			return
 		}
+		//model.DB.Self.
 		if d := model.DB.Self.Model(&u).Association("Printers").Append(p); d.Error != nil {
 			SendResponse(c, errno.ErrDatabase, nil)
 			return

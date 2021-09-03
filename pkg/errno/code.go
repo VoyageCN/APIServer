@@ -17,4 +17,6 @@ var (
 
 	// printer errors
 	ErrParameterInvalid = &Errno{Code: 30101, Message: "The parameter was invalid."}
+	ErrPrinterExists    = &Errno{Code: 30102, Message: "The printer already exists."}
+	ErrPrinterNotFound  = &Errno{Code: 30102, Message: "The printer was not found."}
 )

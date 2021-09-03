@@ -23,11 +23,14 @@ func Update(c *gin.Context) {
 		return
 	}
 
-	p := &model.PrinterModel{
-		Uuid: r.Uuid,
-		Host: ip,
-		Port: port,
+	p, err := model.GetPrinter(r.Uuid)
+	if err != nil {
+		SendResponse(c, errno.ErrPrinterNotFound, nil)
+		return
 	}
+
+	p.Host = ip
+	p.Port = port
 
 	if err := p.Update(); err != nil {
 		SendResponse(c, errno.ErrDatabase, nil)

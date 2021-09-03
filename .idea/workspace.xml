@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="687d5402-46a7-4cc2-abbb-57c019451e71" name="Default Changelist" comment="">
+    <list default="true" id="687d5402-46a7-4cc2-abbb-57c019451e71" name="Default Changelist" comment="添加打印机注册&#10;添加用户绑定打印机">
+      <change afterPath="$PROJECT_DIR$/handler/user/activate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/email/email.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/user/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user/create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/user/get.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user/get.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/printer/connect.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/printer/connect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/printer/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/printer/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/printer/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/printer/update.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/user/bindPrinter.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user/bindPrinter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handler/user/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user/register.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handler/user/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user/login.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/user/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user/update.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handler/user/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/user/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/printer.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/printer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/errno/code.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/errno/code.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/token/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/token/token.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/version/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/version/base.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/util_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +145,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加打印机注册&#10;添加用户绑定打印机" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加打印机注册&#10;添加用户绑定打印机" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <environment>
@@ -167,6 +169,11 @@
           <url>file://$PROJECT_DIR$/../../../../../Go/src/encoding/json/scanner.go</url>
           <line>242</line>
           <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/service/service.go</url>
+          <line>7</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

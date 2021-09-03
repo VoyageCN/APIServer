@@ -3,9 +3,9 @@ package router
 import (
 	_ "APISERVER/docs"
 	"APISERVER/handler/printer"
+	"APISERVER/handler/user"
 
 	"APISERVER/handler/sd"
-	"APISERVER/handler/user"
 	"APISERVER/router/middleware"
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
@@ -33,17 +33,18 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	// pprof router
 	pprof.Register(g)
 
-	g.POST("/login", user.Login) // 登陆用户
+	g.POST("/v1/login", user.Login)       // 登陆用户
+	g.POST("/v1/register", user.Register) // 注册用户
 
 	u := g.Group("/v1/user")
 	u.Use(middleware.AuthMiddleware())
 	{
-		u.POST("", user.Create)           // 创建用户
-		u.DELETE("/:id", user.Delete)     // 删除用户
-		u.PUT("/:id", user.Update)        // 更新用户
-		u.GET("", user.List)              // 用户列表
-		u.GET("/userinfo", user.Get)      // 获取登陆用户的详细信息
-		u.POST("/bind", user.BindPrinter) // 绑定打印机
+		u.DELETE("/:id", user.Delete)        // 删除用户
+		u.PUT("/:id", user.Update)           // 更新用户
+		u.GET("", user.Get)                  // 获取登陆用户的详细信息
+		u.GET("/printers", user.GetPrinters) // 获取登陆用户的绑定打印机列表
+		u.PUT("/bind", user.BindPrinter)     // 绑定打印机
+		u.DELETE("/unbind", user.Unbind)     // 取消绑定打印机
 	}
 
 	p := g.Group("/v1/printer")

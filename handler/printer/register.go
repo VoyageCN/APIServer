@@ -22,6 +22,12 @@ func Register(c *gin.Context) {
 		return
 	}
 
+	// 已经存在该打印机
+	if _, err = model.GetPrinter(r.Uuid); err == nil {
+		SendResponse(c, errno.ErrPrinterExists, nil)
+		return
+	}
+
 	p := &model.PrinterModel{
 		Uuid: r.Uuid,
 		Host: ip,

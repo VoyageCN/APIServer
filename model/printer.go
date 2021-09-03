@@ -1,6 +1,8 @@
 package model
 
-import "APISERVER/pkg/errno"
+import (
+	"APISERVER/pkg/errno"
+)
 
 type PrinterModel struct {
 	BaseModel

@@ -9,9 +9,14 @@ import (
 
 type UserModel struct {
 	BaseModel
-	Username string         `json:"username" gorm:"column:username;not null;unique" binding:"required" validate:"min=1,max=32"`
-	Password string         `json:"password" gorm:"column:password;not null" binding:"required" validate:"min=5,max=128"`
-	Printers []PrinterModel `json:"printers" gorm:"many2many:tb_user_printers;"`
+	UUID        string         `json:"uuid" gorm:"column:uuid;not null;unique"`
+	Email       string         `json:"email" gorm:"column:email;not null;unique" binding:"required" validate:"email"`
+	Username    string         `json:"username" gorm:"column:username;not null;unique"`
+	Password    string         `json:"password" gorm:"column:password;not null" binding:"required" validate:"min=5,max=128"`
+	Printers    []PrinterModel `json:"printers" gorm:"many2many:tb_user_printers;"`
+	ClientIP    string         `json:"clientIp" gorm:"column:clientIp;not null"`
+	ClientPort  string         `json:"clientPort" gorm:"column:clientPort;not null"`
+	IsActivated bool           `json:"isActivated" gorm:"column:isActivated;not null"`
 }
 
 func (c *UserModel) TableName() string {
